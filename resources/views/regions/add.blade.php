@@ -1,6 +1,6 @@
 @extends('master')
 
-<h1 class="ui header">Add User</h1>
+<h1 class="ui header">Add Region</h1>
 <form action="/region/add" class="ui form" method="POST">
 {{ csrf_field() }}
 	<div class="field">

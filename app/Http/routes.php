@@ -1,11 +1,12 @@
 <?php
 
-Route::get('/', function () {
+Route::get('../resources/views/app.blade.php', function () {
     return view('accueil');
 });
 
 Route::post('event/add', 'EventsController@create');
 Route::get('event/add', 'EventsController@add');
+Route::get('event/add/{id}', 'EventsController@addImage');
 Route::get('event/', 'EventsController@index');
 
 
@@ -51,3 +52,6 @@ Route::get('region/show/{id}', 'RegionsController@show');
 // 	$event = Event::all();
 // 	return view('75')->with('event', $event);
 // });
+Route::auth();
+
+Route::get('/home', 'HomeController@index');

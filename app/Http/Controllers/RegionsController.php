@@ -24,7 +24,7 @@ class RegionsController extends Controller
 	 {
 
 	 	 $this->validate($request, [
-	 	 	'name'=> 'required|max:255',
+	 	 	'name'=> 'required|max:50',
 	 	 	]);
 	 	
 	 	Region::insert([
@@ -36,9 +36,7 @@ class RegionsController extends Controller
 
 		public function show($id)
 	{	
-		$events = Region::find($id)->events()->get();
-		return view('regions.show',compact('events', 'regions'));
-
-		// return view('events.show',['region'=>Region::findOrfail($id)]);
+		$region = Region::find($id);
+		return view('regions.show',compact('region'));
 	}
 }

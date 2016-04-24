@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>@yield('title') </title>
 	<link rel="stylesheet" type="text/css" href="/css/semantic.min.css">
+	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 

@@ -2,7 +2,7 @@
 
 @section('title', 'Actions-Motards')
 
-<h1>Liste de tout les evenements sur {{$regions->name}}</h1>
+
 
 
 @foreach($events as $event)
