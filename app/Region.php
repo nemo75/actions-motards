@@ -13,4 +13,8 @@ class Region extends Model
 	{
 		return $this->hasMany('App\Event');
 	}
+	public function associations()
+	{
+		return $this->hasMany('App\Association');
+	}
 }

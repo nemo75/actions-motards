@@ -15,7 +15,7 @@ class Event extends Model
     }
     public function image()
     {
-    	return $this->hasOne('App\Image');
+    	return $this->hasOne('App\Image', 'imageable_id');
 
     }
 }

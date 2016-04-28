@@ -1,0 +1,136 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #FFF;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #4fc3f7;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.parallax-container.img-hero {
+	height: 900px;
+}
+
+.parallax-container.parallax-hero-asso {
+  height: 900px;
+}
+
+.parallax-container.parallax-hero-events {
+  height: 900px;
+}
+
+.text-hero {
+	margin-top: 250px;
+}
+
+.overlay {  
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.carte {
+  height: 900px;
+}
+
+.carte_france {
+  max-width: 100%;
+  margin-top: 50px;
+}
+
+.dropdown-button.btn.btn-region {
+  width: 600px;
+  height: 60px;
+  padding-top: 12px;
+  font-size: 2em;
+  z-index: 999;
+}
+
+.menu-scroll {
+  margin-top: 50px;
+}
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.btn-submit {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #4fc3f7;
+  color: #4fc3f7;
+}
+
+.btn-submit:hover {
+  background: transparent;
+}
+
+.contact-title {
+  color: #4fc3f7;
+}
+
+.dropdown-content {
+  z-index: 999;
+}
+
+.btn-region {
+  max-width: 100%;
+}

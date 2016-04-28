@@ -1,8 +1,8 @@
-<form method="POST" action="{{$url}}" class="ui form">
+<form method="POST" action="/image/add/{{$events->id}}" class="ui form">
    {{ csrf_field() }}
    <div class="field">
        <label for="title">Title</label>
-       <inputname="title" type="text" id="title">
+       <input name="title" type="text" id="title">
    </div>
    <div class="field">
        <label for="image">Choose an Image: </label>
