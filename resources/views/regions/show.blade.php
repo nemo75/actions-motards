@@ -64,102 +64,88 @@
 					<h3><i class="mdi-content-send brown-text"></i></h3>
 
 					<h4>Evénement à venir en {{$region->name}}</h4>
+					<?php
+					$date = date("d-m-Y");
+					$heure = date("H:i");
+					Print("Nous sommes le $date et il est $heure");
+					?>
 
 				</div>
 			</div>
+			@foreach($region->events as $event)
+			@if(new DateTime() < new DateTime($event->date)) 
 			<div class="row">
 				<div class="col s12 center">
 					<div class="card large">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="/images/theo.jpg"	>
+							<img class="activator" src="/images/{{$event->path}}" style="width: 100%;">
 						</div>
-						@foreach($region->events as $event)
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">{{$event->association}} organise La Balade pour les Réves de Théo - {{$event->date}}<i class="material-icons right">more_vert</i></span>
+							<span class="card-title activator grey-text text-darken-4">{{$event->association}} - {{$event->date}}<i class="material-icons right">more_vert</i></span>
 							<p><a href="{{$event->site_asso}}">Inscrit toi !</a></p>
 						</div>
 						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4">{{$event->association}} organise La Balade pour les Réves de Théo<i class="material-icons right">close</i></span>
+							<span class="card-title grey-text text-darken-4">{{$event->association}}<i class="material-icons right">close</i></span>
 							<p>{{$event->description}}</p>
+							<img src="/images/{{$event->path}}" alt="" style="width:450px; height:500px;">
 						</div>
 					</div>
 				</div>
-				@endforeach
 			</div>
+			@endif
+			@endforeach
 		</div>
 	</div>
+			<div class="parallax-container valign-wrapper overlay">
+				<div class="section no-pad-bot">
+					<div class="container">
+						<div class="row center">
+							<h5 class="header col s12 blue-text text-lighten-2">A modern responsive front-end framework based on Material Design</h5>
+						</div>
+					</div>
+				</div>
+				<div class="parallax">
+					<img src="/images/moto.jpg" alt="Unsplashed background img 2">
+				</div>
+			</div>
 </section>
 
-<div class="parallax-container valign-wrapper overlay">
-	<div class="section no-pad-bot">
-		<div class="container">
-			<div class="row center">
-				<h5 class="header col s12 blue-text text-lighten-2">A modern responsive front-end framework based on Material Design</h5>
-			</div>
-		</div>
-	</div>
-	<div class="parallax"><img src="/images/biker_kid.jpg" alt="Unsplashed background img 2"></div>
-</div>
 
 <div class="container">
 	<div class="section">
-
 		<div class="row">
 			<div class="col s12 center">
 				<h3><i class="mdi-content-send brown-text"></i></h3>
 				<h4>Evénements passés</h4>
 				
 
+				@foreach($region->events as $event)
+				@if(new DateTime() > new DateTime($event->date))
 				<div class="col s12 m4">
 					<div class="card small">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="/images/moto.jpg">
+							<img class="activator" src="/images/{{$event->path}}">
 						</div>
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+							<span class="card-title activator grey-text text-darken-4">{{$event->association}}<i class="material-icons right">more_vert</i></span>
 							<p><a href="#">This is a link</a></p>
 						</div>
 						<div class="card-reveal">
 							<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-							<p>Here is some more information about this product that is only revealed once clicked on.</p>
+							<p>{{$event->description}}</p>
+							<img src="/images/{{$event->path}}" alt="" style="width:250px; height:250px;">
 						</div>
 					</div>
 				</div>
+				@endif
+				@endforeach
 
-				<div class="col s12 m4">
-					<div class="card small">
-						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="/images/moto.jpg">
-						</div>
-						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-							<p><a href="#">This is a link</a></p>
-						</div>
-						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-							<p>Here is some more information about this product that is only revealed once clicked on.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col s12 m4">
-					<div class="card small">
-						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="/images/moto.jpg">
-						</div>
-						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-							<p><a href="#">This is a link</a></p>
-						</div>
-						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-							<p>Here is some more information about this product that is only revealed once clicked on.</p>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+
 
 @endsection
 

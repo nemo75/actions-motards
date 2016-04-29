@@ -107,13 +107,7 @@
       showTooltip: true,
         onRegionClick: function(element, code, region)
         {
-            var message = 'Région : "'
-                + region 
-                + '" || Id : "'
-                + code
-          + '"';
-             
-            alert(message);
+            location.href = "/region/show/" + code;    
         }
     });
   });
