@@ -1,35 +1,35 @@
 @extends('master')
 
 @section('content')
+
 <div id="index-banner" class="parallax-container img-hero overlay">
-  <div class="section no-pad-bot">
-   <div class="container text-hero">
-     <br><br>
-     <h1 class="header center blue-text text-lighten-2">Action - Motard</h1>
-     <div class="row center">
-      <h5 class="header col s12 light">Nulla vel massa quis mi pellentesque rutrum ac vitae ligula. Vivamus id augue vulputate, sodales risus id, commodo erat. Integer nibh augue, eleifend in convallis fermentum, facilisis eget nisi.</h5>
+    <div class="section no-pad-bot">
+      <div class="container text-hero">
+          <br><br>
+          <h1 class="header center blue-text text-lighten-2">Action - Motard</h1>
+          <div class="row center">
+              <h5 class="header col s12 light">Nulla vel massa quis mi pellentesque rutrum ac vitae ligula. Vivamus id augue vulputate, sodales risus id, commodo erat. Integer nibh augue, eleifend in convallis fermentum, facilisis eget nisi.</h5>
+          </div>
+          <div class="row center">
+              <a href="#about" id="download-button" class="btn-large waves-effect waves-light grey darken-4 blue-text text-lighten-2 js-scrollTo">En Savoir Plus ...</a>
+          </div>
+          <div class="row center"><a href="#about" class="js-scrollTo"><i class="medium material-icons icon-home">play_for_work</i></a></div>
+      </div>
     </div>
-    <div class="row center">
-      <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light grey darken-4 blue-text text-lighten-2">En Savoir Plus ...</a>
-    </div>
-    <br><br>
-
-  </div>
-</div>
-<div class="parallax"><img src="images/biker.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="images/biker.jpg" alt="Unsplashed background img 1"></div>
 </div>
 
-
+<section id="about">
 <div class="container">
   <div class="section">
 
-    <div class="row">
+    <div class="row menu-scroll">
       <div class="col s12 center">
-        <h3><i class="mdi-content-send brown-text"></i></h3>
-        <h4>A Propos</h4>
-      </div>
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>A Propos</h4>
+        </div>
     </div>
-    <!--   Icon Section   -->
+      <!--   Icon Section   -->
     <div class="row">
       <div class="col s12 m4">
         <div class="icon-block">
@@ -61,19 +61,18 @@
 
   </div>
 </div>
-
+</section>
 
 <div class="parallax-container valign-wrapper overlay">
-  <div class="section no-pad-bot">
-   <div class="container">
-     <div class="row center">
-      <h5 class="header col s12 blue-text text-lighten-2">A modern responsive front-end framework based on Material Design</h5>
+    <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+              <h5 class="header col s12 blue-text text-lighten-2">A modern responsive front-end framework based on Material Design</h5>
+          </div>
+        </div>
     </div>
-  </div>
+    <div class="parallax"><img src="images/biker_kid.jpg" alt="Unsplashed background img 2"></div>
 </div>
-<div class="parallax"><img src="images/biker_kid.jpg" alt="Unsplashed background img 2"></div>
-</div>
-
 
 <div class="container carte">
     <div class="section">
@@ -88,7 +87,8 @@
     </div>
 </div>
 
-<div class="parallax-container valign-wrapper overlay">
+
+<div class="parallax-container valign-wrapper overlay form-contact">
     <div class="section no-pad-bot">
         <div class="container">
           <div class="row center">            
@@ -128,7 +128,7 @@
             </form>
           </div>
         </div>
-        <div class="parallax"><img src="/images/harley_sun.jpg" alt="Unsplashed background img 3"></div>
+        <div class="parallax"><img src="images/harley_sun.jpg" alt="Unsplashed background img 3"></div>
   </div>
 </div>
 @endsection

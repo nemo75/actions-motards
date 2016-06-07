@@ -1,7 +1,6 @@
 @extends('master')
 
 @section('content')
-
 <div id="index-banner" class="parallax-container parallax-hero-events overlay">
 
   <div class="section no-pad-bot">
