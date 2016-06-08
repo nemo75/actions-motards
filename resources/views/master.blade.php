@@ -52,22 +52,12 @@
       <form class="col s12" role="form" method="POST" action="{{ url('/register') }}">
        {!! csrf_field() !!}
        <div class="row">
-        <div class="input-field col s6 form-group {{ $errors->has('first_name') ? ' has-error' : '' }}">
+        <div class="input-field col s12 form-group {{ $errors->has('first_name') ? ' has-error' : '' }}">
           <input id="first_name" type="text" class="validate" name="first_name" value="{{ old('first_name') }}">
-          <label for="first_name">Prénom</label>
+          <label for="first_name">Prénom Nom</label>
           @if ($errors->has('first_name'))
           <span class="help-block">
             <strong>{{ $errors->first('first_name') }}</strong>
-          </span>
-          @endif
-        </div>
-
-        <div class="input-field col s6 form-group {{ $errors->has('name') ? ' has-error' : '' }}">
-          <input id="last_name" type="text" class="validate" name="name" value="{{ old('name') }}">
-          <label for="first_name">Nom</label>
-          @if ($errors->has('name'))
-          <span class="help-block">
-            <strong>{{ $errors->first('name') }}</strong>
           </span>
           @endif
         </div>

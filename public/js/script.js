@@ -11,7 +11,7 @@
 $(document).ready(function() {
 		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
 			var page = $(this).attr('href'); // Page cible
-			var speed = 9000; // Durée de l'animation (en ms)
+			var speed = 1000; // Durée de l'animation (en ms)
 			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
 			return false;
 		});
@@ -22,7 +22,7 @@ $(document).ready(function(){
   $('.dropdown-button').dropdown({
       inDuration: 300,
       outDuration: 225,
-      constrain_width: true, // Does not change width of dropdown to that of the activator
+      constrain_width: false, // Does not change width of dropdown to that of the activator
       hover: true, // Activate on hover
       gutter: 0, // Spacing from edge
       belowOrigin: false, // Displays dropdown below the button

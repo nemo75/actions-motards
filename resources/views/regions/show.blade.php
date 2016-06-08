@@ -86,7 +86,6 @@ $heure = date("H:i");
 					<h3><i class="mdi-content-send brown-text"></i></h3>
 
 					<h4>Evénement à venir en {{$region->name}}</h4>
-					<h5>Acucun evenement a venir</h5>
 
 				</div>
 			</div>
@@ -141,10 +140,10 @@ $heure = date("H:i");
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">{{$event->association}}<i class="material-icons right">more_vert</i></span>
-							<p><a href="#">This is a link</a></p>
+							<p><a href="#">Lien de l'&eacute;v&egrave;nement</a></p>
 						</div>
 						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+							<span class="card-title grey-text text-darken-4">{{ $event->association }}<i class="material-icons right">close</i></span>
 							<p>{{$event->description}}</p>
 							<img src="/images/{{$event->path}}" alt="" style="width:250px; height:250px;">
 						</div>
