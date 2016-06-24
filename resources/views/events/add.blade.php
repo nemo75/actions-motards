@@ -1,4 +1,6 @@
 @extends('master')
+	
+@if( Auth::user()->name == "Thomas Bricquet")
 
 <h1 class="ui header">Add User</h1>
 <form action="/event/add" class="ui form" method="POST">
@@ -86,3 +88,4 @@
        <input type="submit" value="Save">
    </div>
 </form>
+@endif

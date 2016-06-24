@@ -123,6 +123,15 @@ footer.page-footer {
   font-size: 2em;
   z-index: 999;
 }
+#dropdown1 {
+  width: 600px;
+  max-height: 450px;
+}
+
+#dropdown2 {
+  width: 600px;
+  max-height: 150px;
+}
 
 .menu-scroll {
   margin-top: 100px;

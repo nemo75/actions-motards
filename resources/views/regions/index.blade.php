@@ -47,7 +47,7 @@
             <li class="divider"></li>
             <li><a href="/region/show/11" class="js-scrollTo">Rhône-Alpes</a></li>
             <li class="divider"></li>
-            <li><a href="/region/show/16" class="js-scrollTo">Languedoc-Roussilon Midi-Pyrénées</a></li>
+            <li><a href="/region/show/16" class="js-scrollTo">Languedoc-Roussilon</a></li>
             <li class="divider"></li>
             <li><a href="/region/show/15" class="js-scrollTo">Midi-Pyrénées</a></li>
             <li class="divider"></li>

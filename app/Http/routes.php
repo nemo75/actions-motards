@@ -20,41 +20,6 @@ Route::get('association/', 'AssociationsController@index');
 Route::get('association/add', 'AssociationsController@add');
 Route::post('association/add', 'AssociationsController@create');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Route::get('/75', function () {
-// 	$event = Event::all();
-//     return view('75')->with('event', $event);
-// });
-
-// Route::get('/13', function () {
-// 	$event = Event::all();
-//     return view('13')->with('event', $event);
-// });
-
-// Route::get('blade', function(){
-// 	$event = Event::all();
-// 	return view('75')->with('event', $event);
-// });
 Route::auth();
 
 Route::get('/home', 'HomeController@index');

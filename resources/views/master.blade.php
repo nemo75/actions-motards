@@ -18,7 +18,7 @@
 <body>
   <nav class="grey darken-4 navbar-fixed" role="navigation">
     <div class="nav-wrapper container">
-    	<a id="logo-container" href="{{ url('/') }}" class="brand-logo">Actions Motards</a>
+    	<a id="logo-container" href="{{ url('/') }}" class="brand-logo">Actions-Motards</a>
     	<ul class="right hide-on-med-and-down text-grey lighten-2">
        <li><a href="{{ url('/') }}" class="light-blue-text text-lighten-2">A Propos</a></li>
        <li><a href="{{ url('/region') }}" class="light-blue-text text-lighten-2">Events</a></li>
@@ -29,7 +29,11 @@
        @else
        <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-          {{ Auth::user()->name }}{{ Auth::user()->first_name }} 
+          @if( Auth::user()->name  == "Thomas Bricquet")
+          {{ Auth::user()->name }} (admin)
+            @else 
+            {{ Auth::user()->name }}
+          @endif
           <span class="caret"></span>
         </a>
       </li>
@@ -155,7 +159,7 @@
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
-        <h5 class="blue-text text-lighten-2">Action Motard</h5>
+        <h5 class="blue-text text-lighten-2">Actions-Motards</h5>
         <p class="blue-text text-lighten-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ullamcorper nulla vitae lacus laoreet, id molestie felis tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec interdum, elit sit amet pretium vestibulum, velit augue mollis leo, sed laoreet quam nibh vel diam. Sed hendrerit eu nunc sit amet cursus.</p>
       </div>
       <div class="col l6 s12 center">
@@ -205,7 +209,16 @@
       s.parentNode.insertBefore(wf, s);
     })(); </script>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-78961338-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
     <script src="/js/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/materialize.js"></script>

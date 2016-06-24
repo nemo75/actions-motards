@@ -1,12 +1,11 @@
 @extends('master')
 
 @section('content')
-
 <div id="index-banner" class="parallax-container img-hero overlay">
     <div class="section no-pad-bot">
       <div class="container text-hero">
           <br><br>
-          <h1 class="header center blue-text text-lighten-2">Action - Motard</h1>
+          <h1 class="header center blue-text text-lighten-2">Actions-Motards</h1>
           <div class="row center">
               <h5 class="header col s12 light">Nulla vel massa quis mi pellentesque rutrum ac vitae ligula. Vivamus id augue vulputate, sodales risus id, commodo erat. Integer nibh augue, eleifend in convallis fermentum, facilisis eget nisi.</h5>
           </div>
@@ -132,3 +131,15 @@
   </div>
 </div>
 @endsection
+  <script type="text/javascript">
+    WebFontConfig = {
+      google: { families: [ 'Montserrat:400,700:latin' | 'Candal::latin' | 'Paytone+One::latin'] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })(); </script>

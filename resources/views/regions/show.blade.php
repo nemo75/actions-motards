@@ -12,9 +12,9 @@ $heure = date("H:i");
 		<div class="container">
 			<div class="row">
 				<div class="col s12 center">
-					<a class='dropdown-button btn grey darken-4 blue-text text-lighten-2 btn-region' data-beloworigin="true" href='#' data-activates='dropdown1'>Les Régions!</a>
+					<a class='dropdown-button btn grey darken-4 blue-text text-lighten-2 btn-region' data-beloworigin="true" href='#' data-activates='dropdown2'>Les Régions!</a>
 					<!-- Dropdown Structure -->
-					<ul id='dropdown1' class='dropdown-content'>
+					<ul id='dropdown2' class='dropdown-content'>
 						<li><a href="/region/show/4" class="js-scrollTo">Ile de France</a></li>
 						<li class="divider"></li>
 						<li><a href="/region/show/21" class="js-scrollTo">Nord Pas de Calais</a></li>
@@ -75,7 +75,7 @@ $heure = date("H:i");
 				<div class="col s12 center">
 					<h3><i class="mdi-content-send brown-text"></i></h3>
 
-					<h4>Evénement à venir en {{$region->name}}</h4>
+					<h4>Evénementss à venir en {{$region->name}}</h4>
 					<h5>Aucun Evénement à venir </h5>
 				</div>
 			</div>
@@ -86,7 +86,7 @@ $heure = date("H:i");
 					<h3><i class="mdi-content-send brown-text"></i></h3>
 
 					<h4>Evénement à venir en {{$region->name}}</h4>
-
+					<h5>Aucun Evénement à venir </h5>
 				</div>
 			</div>
 			@endif
@@ -140,7 +140,7 @@ $heure = date("H:i");
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">{{$event->association}}<i class="material-icons right">more_vert</i></span>
-							<p><a href="#">Lien de l'&eacute;v&egrave;nement</a></p>
+							<p><a href="{{$event->site_asso}}">Lien de l'&eacute;v&egrave;nement</a></p>
 						</div>
 						<div class="card-reveal">
 							<span class="card-title grey-text text-darken-4">{{ $event->association }}<i class="material-icons right">close</i></span>
