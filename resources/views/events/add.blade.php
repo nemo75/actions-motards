@@ -26,6 +26,18 @@
 		<input type="time" id="time" name="time">
 	</div>
 	<div class="field">
+		<label>Email</label>
+		<input type="text" id="email" name="email_asso">
+	</div>
+	<div class="field">
+		<label>Telepehone de l'association</label>
+		<input type="text" id="telephone" name="telephone_asso">
+	</div>
+	<div class="field">
+		<label>Site de l'association</label>
+		<input type="text" id="site" name="site_asso">
+	</div>
+	<div class="">
 		<label>region_id</label>
 		<select name="region_id" class="ui fluid dropdown">
 			<option value="7">Alsace</option>
@@ -51,30 +63,18 @@
 			<option value="13">PACA</option>
 		</select>
 	</div>
-	<div class="field">
-		<label>Email</label>
-		<input type="text" id="email" name="email_asso">
-	</div>
-	<div class="field">
-		<label>Telepehone de l'association</label>
-		<input type="text" id="telephone" name="telephone_asso">
-	</div>
-	<div class="field">
-		<label>Site de l'association</label>
-		<input type="text" id="site" name="site_asso">
-	</div>
 
 	<div class="field">
 		<label>Description</label>
 		<textarea type="text" id="description" name="description"></textarea>
 	</div>
-	<button type="submit" class="ui purple button">Ajoute-moi !</button>
+	<button type="submit" class="ui  button">Ajoute-moi !</button>
 </form>
 
 
 
 
-<form method="POST" action="/image/add" class="ui form">
+<!-- <form method="POST" action="/image/add" class="ui form">
    {{ csrf_field() }}
    <div class="field">
        <label for="title">Title</label>
@@ -87,5 +87,5 @@
    <div class="field">
        <input type="submit" value="Save">
    </div>
-</form>
+</form> -->
 @endif
