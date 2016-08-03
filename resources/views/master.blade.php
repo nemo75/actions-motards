@@ -20,7 +20,6 @@
     <div class="nav-wrapper container">
     	<a id="logo-container" href="{{ url('/') }}" class="brand-logo">Actions-Motards</a>
     	<ul class="right hide-on-med-and-down text-grey lighten-2">
-       <li><a href="{{ url('/') }}" class="light-blue-text text-lighten-2">A Propos</a></li>
        <li><a href="{{ url('/region') }}" class="light-blue-text text-lighten-2">Events</a></li>
        
        @if (Auth::guest())
@@ -29,18 +28,17 @@
        @else
        <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-          @if( Auth::user()->name  == "Thomas Bricquet")
-          {{ Auth::user()->name }} (admin)
-            @else 
-            {{ Auth::user()->name }}
-          @endif
-          <span class="caret"></span>
+          <div>
+            @if( Auth::user()->name  == "Thomas Bricquet")
+            {{ Auth::user()->name }} (admin)
+              @else 
+              {{ Auth::user()->name }}
+            @endif
+            <span class="caret"></span>
+          </div>
         </a>
+        <a href="{{ url('/logout') }}"><h6>Deconnecte-toi</h6></a>
       </li>
-      <!-- <li>
-        <a href="{{ url('/logout') }}">
-          <i class="fa fa-btn fa-sign-out"></i><h6>Deconnecte-toi</h6></a>
-      </li> -->
       @endif
     </ul>
   </div>
@@ -56,12 +54,12 @@
       <form class="col s12" role="form" method="POST" action="{{ url('/register') }}">
        {!! csrf_field() !!}
        <div class="row">
-        <div class="input-field col s12 form-group {{ $errors->has('first_name') ? ' has-error' : '' }}">
-          <input id="first_name" type="text" class="validate" name="first_name" value="{{ old('first_name') }}">
-          <label for="first_name">Prénom Nom</label>
-          @if ($errors->has('first_name'))
+        <div class="input-field col s12 form-group {{ $errors->has('name') ? ' has-error' : '' }}">
+          <input id="name" type="text" class="validate" name="name" value="{{ old('name') }}">
+          <label for="name">Prénom Nom</label>
+          @if ($errors->has('name'))
           <span class="help-block">
-            <strong>{{ $errors->first('first_name') }}</strong>
+            <strong>{{ $errors->first('name') }}</strong>
           </span>
           @endif
         </div>

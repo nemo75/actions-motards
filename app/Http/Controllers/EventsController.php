@@ -79,8 +79,14 @@ class EventsController extends Controller
 			'site_asso'=> $request->site_asso,
 			]);
 
-		return redirect('event');
+		return redirect('region');
 	}
+	public function delete ($id)
+	{
+		 $event = Event::find($id);
+		 $event->delete();
 
+		 return redirect('region');
+	}
 
 }

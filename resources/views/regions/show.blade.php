@@ -96,6 +96,9 @@ $heure = date("H:i");
 			<div class="row">
 				<div class="col s12 center">
 					<div class="card large">
+					@if(Auth::user()->name == "Thomas Bricquet")
+						<a href="/region/delete/{{$event->id}}">DELETE</a>
+					@endif
 						<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator" src="/images/{{$event->path}}" style="width: 100%;">
 						</div>
@@ -135,6 +138,9 @@ $heure = date("H:i");
 				@if(new DateTime() > new DateTime($event->date))
 				<div class="col s12 m4">
 					<div class="card small">
+					@if(Auth::user()->name == "Thomas Bricquet")
+						<a href="/region/delete/{{$event->id}}">DELETE</a>
+					@endif
 						<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator" src="/images/{{$event->path}}">
 						</div>
