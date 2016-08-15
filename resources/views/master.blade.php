@@ -30,9 +30,9 @@
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
           <div>
             @if( Auth::user()->name  == "Thomas Bricquet")
-            {{ Auth::user()->name }} (admin)
+            <h7 id="user">{{ Auth::user()->name }} (admin) </h7>
               @else 
-              {{ Auth::user()->name }}
+             <h7 id="user"> {{ Auth::user()->name }} </h7>
             @endif
             <span class="caret"></span>
           </div>

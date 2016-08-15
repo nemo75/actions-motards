@@ -13,7 +13,7 @@ class RegionsController extends Controller
  public function index()
 	{
 		$regions = Region::all();
-		return view('regions.index',compact('regions'));
+		return view('regions.index',compact('events', 'regions'));
 	}
 	 public function add()
 	 {	

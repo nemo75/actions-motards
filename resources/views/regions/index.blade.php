@@ -59,7 +59,6 @@
       </div>
     </div>
   </div>
-
     <div class="parallax"><img src="/images/harley_street.jpg" alt="Unsplashed background img 1"></div>
   </div>
 @endsection

@@ -62,4 +62,8 @@ $(document).ready(function(){
       complete: function() { alert('Closed'); } // Callback for Modal close
     }
   );
+    $('#eventPast').on('click', function(){
+     $('#pastEvent').css("display", "");
+     $('#eventPast').hide()
+    });
   });
