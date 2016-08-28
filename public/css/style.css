@@ -75,6 +75,9 @@ p {
     top: 0;
   }
 }
+.icon-p {
+  font-size: 18px;
+}
 
 .icon-block {
   padding: 0 15px;

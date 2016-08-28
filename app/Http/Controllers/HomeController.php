@@ -26,4 +26,9 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    public function mentions ()
+    {
+        echo "patata";
+        return view('regions.mentions');        
+    }
 }

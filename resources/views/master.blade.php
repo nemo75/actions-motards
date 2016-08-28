@@ -163,9 +163,7 @@
       <div class="col l6 s12 center">
         <h5 class="blue-text text-lighten-2">Menu</h5>
         <ul>
-          <li><a href="/index.html" class="light-blue-text text-lighten-2 js-scrollTo">A Propos</a></li>
-          <li><a href="events.html" class="light-blue-text text-lighten-2">Events</a></li>
-          <li><a href="assos.html" class="light-blue-text text-lighten-2">Assos</a></li>
+          <li><a href="{{ url('/region') }}" class="light-blue-text text-lighten-2">Events</a></li>
         </ul>
       </div>
     </div>
@@ -177,7 +175,7 @@
           &copy; Copyright 2016 / Made with <3  by <a class="blue-text text-lighten-2" href="http://materializecss.com">Thomas Bricquet</a>&nbsp;&amp;&nbsp;<a class="blue-text text-lighten-2" href="http://jeromemouly.com">Jérôme Mouly</a>&nbsp;/&nbsp;Design by <a class="blue-text text-lighten-2" href="http://jeromemouly.com">Jérôme Mouly</a>
         </div>
         <div class="col s12 m4">
-          <a class="blue-text text-lighten-2" href="mentions.html">Mentions Légales / Crédits</a>
+          <a class="blue-text text-lighten-2" href="mentions">Mentions Légales / Crédits</a>
         </div>
       </div>
     </div>

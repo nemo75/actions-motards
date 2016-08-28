@@ -18,6 +18,7 @@ Route::get('association/add', 'AssociationsController@add');
 Route::post('association/add', 'AssociationsController@create');
 
 Route::auth();
+Route::get('mentions', 'HomeController@mentions' );
 
 Route::post('region/add', 'RegionsController@create');
 Route::get('region/add', 'RegionsController@add');
