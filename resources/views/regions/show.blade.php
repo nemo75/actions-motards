@@ -66,7 +66,6 @@ $heure = date("H:i");
 
 	<div class="parallax"><img src="/images/biker_road.jpg" alt="Unsplashed background img 1"></div>
 </div>
-
 <section id="region">
 	<div class="container">
 		<div class="section">
@@ -80,7 +79,6 @@ $heure = date("H:i");
 				</div>
 			</div>
 			@elseif($region->events > $date)
-			<!--  -->
 			<div class="row">
 				<div class="col s12 center">
 					<h3><i class="mdi-content-send brown-text"></i></h3>
@@ -120,10 +118,10 @@ $heure = date("H:i");
 		@endforeach
 
 		@if(sizeOf($region->events)  == null)
-		<div class="col s12 center">
+<!-- 		<div class="col s12 center">
 			<h7 style="color:blue" id="eventPast">Voir les Evénements passés</h7>
-		</div>
-		<div class="row" id="pastEvent" style="display:none;">
+		</div> -->
+		<div class="row">
 			<div class="col s12 center">
 				<h3><i class="mdi-content-send brown-text"></i></h3>
 				<h4>Evénements passés</h4>
@@ -131,10 +129,10 @@ $heure = date("H:i");
 			</div>
 		</div>
 		@else
-		<div class="col s12 center">
-			<h7 style="color:blue" id="eventPast">Voir les Evénements passés</h7>
-		</div>
-		<div class="row" id="pastEvent" style="display:none;">
+<!-- 		<div class="col s12 center">
+ 			<h7 style="color:blue" id="eventPast">Voir les Evénements passés</h7> 
+		</div> -->
+		<div class="row">
 			<div class="col s12 center">
 				<h3><i class="mdi-content-send brown-text"></i></h3>
 				<h4>Evénements passés</h4>

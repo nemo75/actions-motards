@@ -7,7 +7,8 @@
           <br><br>
           <h1 class="header center blue-text text-lighten-2">Actions-Motards</h1>
           <div class="row center">
-              <h5 class="header col s12 light">Nulla vel massa quis mi pellentesque rutrum ac vitae ligula. Vivamus id augue vulputate, sodales risus id, commodo erat. Integer nibh augue, eleifend in convallis fermentum, facilisis eget nisi.</h5>
+              <h5 class="header col s12 light">Chaque mois des sorties motos amicales sont proposés en faveur d’association pour but de récolter des fonds. Actions motard, c’est avant tout une communauté de motard qui a pour but d’être les héros a deux roues pour ceux qui en ont besoin.
+              </h5>
           </div>
           <div class="row center">
               <a href="#about" id="download-button" class="btn-large waves-effect waves-light grey darken-4 blue-text text-lighten-2 js-scrollTo">En Savoir Plus ...</a>
