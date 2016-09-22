@@ -86,7 +86,7 @@
   <div class="section no-pad-bot">
     <div class="container">
       <div class="row center">            
-        <h2 class="contact-title">Associations Contacter-Nous</h2>
+        <h2 class="contact-title">Associations Contactez-Nous</h2>
       </div>
       <div class="row menu-scroll">
         <form class="col s12">

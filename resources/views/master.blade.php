@@ -158,13 +158,13 @@
     <div class="row">
       <div class="col l6 s12">
         <h5 class="blue-text text-lighten-2">Actions-Motards</h5>
-        <p class="blue-text text-lighten-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ullamcorper nulla vitae lacus laoreet, id molestie felis tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec interdum, elit sit amet pretium vestibulum, velit augue mollis leo, sed laoreet quam nibh vel diam. Sed hendrerit eu nunc sit amet cursus.</p>
-      </div>
-      <div class="col l6 s12 center">
-        <h5 class="blue-text text-lighten-2">Menu</h5>
-        <ul>
-          <li><a href="{{ url('/region') }}" class="light-blue-text text-lighten-2">Events</a></li>
-        </ul>
+        <p class="blue-text text-lighten-2">Vous devez imaginer un produit ou un service et créer le site/l'application web. Il peut s'agir
+        d'un site e­commerce, d'un réseau social, d'un service SAAS, d'un jeu en ligne, etc. Vous
+        êtes 100% libres, mais ne soyez pas trop ambitieux. Si vous avez un projet de startup, ça
+        peut être l'occasion de développer un prototype.
+
+      Dans tous les cas vous consulterez votre formateur avant de vous lancer pour valider votre
+      projet.</p>
       </div>
     </div>
   </div>

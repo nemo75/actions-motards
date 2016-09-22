@@ -82,9 +82,7 @@ $heure = date("H:i");
 			<div class="row">
 				<div class="col s12 center">
 					<h3><i class="mdi-content-send brown-text"></i></h3>
-
 					<h4>Evénement à venir en {{$region->name}}</h4>
-					<h5>Aucun Evénement à venir </h5>
 				</div>
 			</div>
 			@endif
@@ -118,9 +116,6 @@ $heure = date("H:i");
 		@endforeach
 
 		@if(sizeOf($region->events)  == null)
-<!-- 		<div class="col s12 center">
-			<h7 style="color:blue" id="eventPast">Voir les Evénements passés</h7>
-		</div> -->
 		<div class="row">
 			<div class="col s12 center">
 				<h3><i class="mdi-content-send brown-text"></i></h3>
@@ -129,22 +124,20 @@ $heure = date("H:i");
 			</div>
 		</div>
 		@else
-<!-- 		<div class="col s12 center">
- 			<h7 style="color:blue" id="eventPast">Voir les Evénements passés</h7> 
-		</div> -->
+
 		<div class="row">
 			<div class="col s12 center">
 				<h3><i class="mdi-content-send brown-text"></i></h3>
 				<h4>Evénements passés</h4>
-				@endif
+		@endif
 
 				@foreach($region->events as $event)	
 				@if(new DateTime() > new DateTime($event->date))
 				<div class="col s12 m4">
 					<div class="card small">
-					@if(Auth::user()->name == "Thomas Bricquet")
+			 		@if(Auth::user()->name == "Thomas Bricquet")
 						<a href="/region/delete/{{$event->id}}">DELETE</a>
-					@endif
+					@endif 
 						<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator" src="/images/{{$event->path}}">
 						</div>
@@ -165,7 +158,6 @@ $heure = date("H:i");
 		</div>
 	</div>
 </div>
-
 @endsection
 
 

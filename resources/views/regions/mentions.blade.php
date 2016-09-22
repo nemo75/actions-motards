@@ -16,7 +16,7 @@
 		<div class="col s12 m6">
 			<p>Directeur de la publication : Thomas Bricquet
 			<br>
-				Création site internet : Thomas Bricquet & Jérôme Mouly & Alex Leray
+				Création site internet : Thomas Bricquet & Jérôme Mouly & Alexandra Leray
 			<br>
 				Photographies: pixabay.com
 			<br>
